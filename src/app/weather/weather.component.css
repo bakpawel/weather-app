@@ -1,0 +1,7 @@
+img{
+    width: 45%;
+}
+
+input.ng-invalid.ng-touched{ 
+   border-bottom: 4px solid #f00;
+}

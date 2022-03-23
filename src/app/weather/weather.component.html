@@ -1,7 +1,12 @@
 <div class="container vh-100">
   <div class="row justify-content-center">
     <div class="col-10 col-md-6">
-      <form class="">
+      <form
+        class=""
+        (ngSubmit)="onSubmit(form)"
+        #form="ngForm"
+        ngNativeValidate
+      >
         <div class="row">
           <div class="col-12">
             <div class="form-floating my-3">
@@ -9,14 +14,30 @@
                 id="cityName"
                 class="form-control"
                 placeholder="City Name"
+                ngModel
+                #cityName="ngModel"
+                name="cityName"
                 required
-                #cityName
               />
               <label for="cityName">Enter City Name</label>
             </div>
+            <div
+              class="alert alert-warning"
+              role="alert"
+              *ngIf="!cityName.valid && cityName.touched"
+            >
+              This field is required!
+            </div>
           </div>
+
           <div class="d-grid col-md-6 mx-auto">
-            <button class="btn btn-success">Submit</button>
+            <button
+              type="submit"
+              [disabled]="!form.valid && form.touched"
+              class="btn btn-success"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </form>
@@ -24,19 +45,19 @@
   </div>
   <div class="row justify-content-center mt-3">
     <div class="col-8 col-md-6 col-lg-4">
-      <div class="card shadow-lg p-2">
+      <div class="card shadow-lg p-2" *ngIf="form.valid && form.touched">
         <div class="card-body pb-0">
           <h4 class="card-title">City Name, PL</h4>
           <p class="card-text mb-0">Clear</p>
           <p
             class="card-text text-center fw-bold m-0 p-0"
-            style="font-size: 3em"
+            style="font-size: 2.5em"
           >
             30 &#8451;
           </p>
         </div>
         <img
-          class="card-image w-50 mx-auto"
+          class="card-image mx-auto"
           src="https://icons-for-free.com/iconfiles/png/512/clouds+rain+rainy+weather+icon-1320196492721656738.png"
         />
         <div class="row justify-content-center">
