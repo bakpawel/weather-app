@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Weather } from '../weather';
@@ -12,7 +13,6 @@ export class WeatherComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
 
   weather: Weather | undefined;
-
   ngOnInit(): void {}
 
   onSubmit(form: NgForm) {
@@ -23,5 +23,22 @@ export class WeatherComponent implements OnInit {
         console.log(response);
         this.weather = response;
       });
+  }
+
+  getLocation(){
+    if (navigator.geolocation){
+      navigator.geolocation.getCurrentPosition((position) =>{
+        console.log(typeof(position));
+        const {latitude, longitude} = position.coords;
+        this.weatherService.getWeather("", `${latitude}`, `${longitude}`).subscribe((response)=>{
+          console.log(response);
+          this.weather = response
+        })
+      },()=>{
+        alert(
+          'location permission denied. Please type city name. '
+        )
+      })
+    }
   }
 }
