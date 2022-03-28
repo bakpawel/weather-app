@@ -10,12 +10,25 @@ import { Weather } from './weather';
 export class WeatherService {
   //for fetching data from server
   constructor(private http: HttpClient) {}
+  coordinates;  
 
-  getWeather(city: string): Observable<Weather> {
-    const params = new HttpParams()
+  getWeather(city?: string, latitude?: string, longitude?: string): Observable<Weather> {
+    if(city){
+      const params = new HttpParams()
       .set('q', city)
       .set('units', 'metric')
       .set('appid', environment.apiKey);
+
     return this.http.get<Weather>(environment.apiUrl + params);
+    }
+    if(latitude){
+      const params = new HttpParams()
+      .set('lat', latitude)
+      .set('lon', longitude)
+      .set('units', 'metric')
+      .set('appid', environment.apiKey);
+
+    return this.http.get<Weather>(environment.apiUrl + params);
+    }
   }
 }

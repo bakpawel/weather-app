@@ -21,18 +21,28 @@
               role="alert"
               *ngIf="!cityName.valid && cityName.touched"
             >
-              This field is required!
+              Fill up this form or use geolocation!
             </div>
           </div>
 
-          <div class="d-grid col-md-6 mx-auto">
+          <div class="d-grid col-md-6 mx-auto mb-2 mb-md-0">
             <button
               type="submit"
-              [disabled]="!form.valid && form.touched"
-              class="btn btn-success"
+              [disabled]="!form.valid"
+              class="btn btn-warning"
             >
               Submit
             </button>
+            
+          </div><div class="d-grid col-md-6 mx-auto">
+            <button
+              type="button"
+              class="btn btn-warning"
+              (click)="getLocation()"
+            >
+              Use your location
+            </button>
+            
           </div>
         </div>
       </form>
