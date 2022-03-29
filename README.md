@@ -1,27 +1,52 @@
-# WeatherApp
+# WeatherApp - Weather Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+##### Created with Angular, Bootstrap and OpenWeatherMap Api
 
-## Development server
+## Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+My attempt to make an weather app with Angular.
+App is conecting with `https://openweathermap.org/` API. 
+You have to options to get data from API: 
+1. entering city name,
+2. sharing your geolocation. 
 
-## Code scaffolding
+##### App is responsive
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built with
 
-## Build
+Project is created with:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Angular 11.2.14
+- Bootstrap 5.0
+- [OpenWeatherMap Api](https://openweathermap.org/)
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- fetching data from [OpenWeatherMap Api](https://openweathermap.org/)
+- get weather by City name
+- get weather by geolocation
+- showing current wather with weather icon and some basic data like: temperature, pressure, humidity, wind speed 
 
-## Running end-to-end tests
+## Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+soon...
 
-## Further help
+## Launch
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Live Demo
+
+soon...
+
+### Development server
+
+Clone this repo to your desktop and run `npm install` to install all dependencies.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+
+## To-do
+
+- subtle animation
+- replace dummy icon with coresponding to acctual weather
+
+## Contact
+
+Created by [@PawelBak](https://pawel-bak-portfolio.web.app/) - feel free to contact me!
