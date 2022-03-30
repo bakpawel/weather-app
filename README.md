@@ -39,8 +39,8 @@ soon...
 
 ### Development server
 
-Clone this repo to your desktop and run `npm install` to install all dependencies.
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+Clone this repo to your desktop and run `npm install` to install all dependencies and see how the code is structured. 
+Live demo soon!
 
 ## To-do
 
