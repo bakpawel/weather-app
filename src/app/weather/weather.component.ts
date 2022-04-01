@@ -25,7 +25,8 @@ export class WeatherComponent implements OnInit {
       });
   }
 
-  getLocation(){
+  getLocation(form: NgForm){
+    form.reset();
     if (navigator.geolocation){
       navigator.geolocation.getCurrentPosition((position) =>{
         console.log(typeof(position));
@@ -36,7 +37,7 @@ export class WeatherComponent implements OnInit {
         })
       },()=>{
         alert(
-          'location permission denied. Please type city name. '
+          'Permission to access geolocation denied. Please type the City name. '
         )
       })
     }
