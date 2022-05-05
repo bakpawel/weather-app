@@ -56,7 +56,7 @@ Now you can check the weather in any part of the globe :)
 
 ### Live Demo
 
-
+You can see deployed live demo [_here_](https://angular-app-weather.web.app/)
 
 
 ## Contact
