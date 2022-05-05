@@ -31,8 +31,8 @@ Project is created with:
 
 ## Screenshots
 <img src="src/assets/printscreens/mobile.png" alt="mobile printscreen" width="1000"/>
-<img src="src/assets/printscreens/desktop1.png" alt="desktop printscreen 1" width="1000"/>
-<img src="src/assets/printscreens/desktop2.png" alt="desktop printscreen 2" width="1000"/>
+<img src="src/assets/printscreens/desktop1.PNG" alt="desktop printscreen 1" width="1000"/>
+<img src="src/assets/printscreens/desktop2.PNG" alt="desktop printscreen 2" width="1000"/>
 
 ## Launch
 To launch this app on your computer you need to get your own API key first from `https://openweathermap.org/`.
