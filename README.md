@@ -28,9 +28,10 @@ Project is created with:
 - subtle animation when card appears
 - showing current wather with weather icon and some basic data like: temperature, pressure, humidity, wind speed 
 
-## Screenshots
 
-soon...
+## Screenshots
+<img src="src/assets/printscreens/mobile.png" alt="mobile printscreen" width="1000"/>
+<img src="src/assets/printscreens/desktop.png" alt="desktop printscreen" width="1000"/>
 
 ## Launch
 To launch this app on your computer you need to get your own API key first from `https://openweathermap.org/`.
@@ -55,9 +56,6 @@ Now you can check the weather in any part of the globe :)
 ### Live Demo
 
 
-## Screenshots
-<img src="src/assets/printscreens/mobile.png" alt="mobile printscreen" width="1000"/>
-<img src="src/assets/printscreens/desktop.png" alt="desktop printscreen" width="1000"/>
 
 
 ## Contact
