@@ -56,8 +56,8 @@ Now you can check the weather in any part of the globe :)
 
 
 ## Screenshots
-![Mobile screenshot 1](src/assets/printscreens/mobile-min.PNG)
-![desktop screenshot 1](src/assets/printscreens/desktop-min.PNG)
+![Mobile screenshot 1](src/assets/printscreens/mobile-min.png)
+![desktop screenshot 1](src/assets/printscreens/desktop-min.png)
 
 
 ## Contact
