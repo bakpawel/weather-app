@@ -54,13 +54,13 @@ Now you can check the weather in any part of the globe :)
 
 ### Live Demo
 
-soon...
 
+## Screenshots
+![Mobile screenshot 1](src/assets/printscreens/1-min.PNG)
+![Mobile screenshot 2](src/assets/printscreens/1a-min.PNG)
+![desktop screenshot 1](src/assets/printscreens/2-min.PNG)
+![desktop screenshot 2](src/assets/printscreens/2a-min.PNG)
 
-## To-do
-
-- subtle animation
-- replace dummy icon with coresponding to acctual weather
 
 ## Contact
 
